@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timestamp microservice</title>
+        <link rel="stylesheet" href ="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            p{
+                color: red;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class = "row">
+               <h1>API Basejump: Timestamp microservice</h1>
+                <h4>User stories:
+                    <h4>1) I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</h4>
+                    <h4>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</h4>
+                    <h4>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</h4>
+                </h4>
+                <h3>Example usage:</h3>
+                <p>https://shrouded-eyrie-90220.herokuapp.com/November 17, 2016</p>
+                <p>https://shrouded-eyrie-90220.herokuapp.com/1479330000</p>
+                <h3>Example output:</h3>
+                <p>{ "unix": "1479330000", "natural": "November 17th 2016" }</p>
+
+            </div>
+        </div>
+    </body>
+</html>
